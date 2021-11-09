@@ -21,19 +21,22 @@ class PageLogin extends StatelessWidget {
             SizedBox(
               height: 50.0,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Image(
-                  image: AssetImage('assets/images/obor_left.png'),
-                ),
-                Image(
-                  image: AssetImage('assets/images/window.png'),
-                ),
-                Image(
-                  image: AssetImage('assets/images/obor_right.png'),
-                ),
-              ],
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 21.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Image(
+                    image: AssetImage('assets/images/obor_left.png'),
+                  ),
+                  Image(
+                    image: AssetImage('assets/images/window.png'),
+                  ),
+                  Image(
+                    image: AssetImage('assets/images/obor_right.png'),
+                  ),
+                ],
+              ),
             ),
             SizedBox(height: 60),
             Text(
