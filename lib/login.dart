@@ -6,186 +6,113 @@ class PageLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Container(
-            color: Colors.grey,
-            width: double.infinity,
-          ),
-          Stack(
-            children:[
-              Container(color: Colors.purple,width: double.infinity,height: 500,),
-              Positioned(
-                top: 0,
-                left: -50,
-                child: Container(
-                  height: 100.0,
-                  width: 100.0,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.yellow,
+      body: SafeArea(
+        child: Column(
+          children: [
+            SizedBox(height: 20.0),
+            Text(
+              'WELCOME',
+              style: TextStyle(
+                fontSize: 46.0,
+                fontWeight: FontWeight.w900,
+                color: Colors.deepOrangeAccent,
+              ),
+            ),
+            SizedBox(
+              height: 50.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Image(
+                  image: AssetImage('assets/images/obor_left.png'),
+                ),
+                Image(
+                  image: AssetImage('assets/images/window.png'),
+                ),
+                Image(
+                  image: AssetImage('assets/images/obor_right.png'),
+                ),
+              ],
+            ),
+            SizedBox(height: 60),
+            Text(
+              'MARIO KW',
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 16.0,
+              ),
+            ),
+            SizedBox(height: 73.0),
+            InkWell(
+              onTap: () {},
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 21.0),
+                height: 60,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.deepOrange,
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                child: Center(
+                  child: Text(
+                    'PLAY',
+                    style: TextStyle(
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white),
                   ),
-                  child: Center(
-                    child: Container(
-                      height: 95.0,
-                      width: 95.0,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          shape: BoxShape.circle
-                      ),
-                      child: Center(
-                        child: Container(
-                          height: 70.0,
-                          width: 70.0,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.yellow,
-                          ),
-                          child: Center(
-                            child: Container(
-                              height: 65.0,
-                              width: 65.0,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
+                ),
+              ),
+            ),
+            SizedBox(height: 12),
+            InkWell(
+              onTap: () {},
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 21.0),
+                height: 60,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.deepOrange.withOpacity(0.8),
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                child: Center(
+                  child: Text(
+                    'OPTION',
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
                     ),
                   ),
                 ),
               ),
-              Positioned(
-                top: 100,
-                right: -50,
-                child: Container(
-                  height: 100.0,
-                  width: 100.0,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.yellow,
-                  ),
-                  child: Center(
-                    child: Container(
-                      height: 95.0,
-                      width: 95.0,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          shape: BoxShape.circle
-                      ),
-                      child: Center(
-                        child: Container(
-                          height: 70.0,
-                          width: 70.0,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.yellow,
-                          ),
-                          child: Center(
-                            child: Container(
-                              height: 65.0,
-                              width: 65.0,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
+            ),
+            SizedBox(height: 12),
+            InkWell(
+              onTap: () {},
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 21.0),
+                height: 60,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.deepOrange.withOpacity(0.8),
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                child: Center(
+                  child: Text(
+                    'EXIT',
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white,
                     ),
                   ),
                 ),
               ),
-              Positioned(
-                top: 200,
-                left: -50,
-                child: Container(
-                  height: 100.0,
-                  width: 100.0,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.yellow,
-                  ),
-                  child: Center(
-                    child: Container(
-                      height: 95.0,
-                      width: 95.0,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          shape: BoxShape.circle
-                      ),
-                      child: Center(
-                        child: Container(
-                          height: 70.0,
-                          width: 70.0,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.yellow,
-                          ),
-                          child: Center(
-                            child: Container(
-                              height: 65.0,
-                              width: 65.0,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                top: 300,
-                right: -50,
-                child: Container(
-                  height: 100.0,
-                  width: 100.0,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.yellow,
-                  ),
-                  child: Center(
-                    child: Container(
-                      height: 95.0,
-                      width: 95.0,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          shape: BoxShape.circle
-                      ),
-                      child: Center(
-                        child: Container(
-                          height: 70.0,
-                          width: 70.0,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: Colors.yellow,
-                          ),
-                          child: Center(
-                            child: Container(
-                              height: 65.0,
-                              width: 65.0,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ]
-          ),
-        ],
+            ),
+          ],
+        ),
       ),
     );
   }
